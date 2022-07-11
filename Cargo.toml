@@ -1,0 +1,10 @@
+[workspace]
+
+members = [
+    "rtos_trace",
+    "systemview_target",
+]
+
+[patch.crates-io]
+rtos-trace = { path = "rtos_trace" }
+systemview-target = { path = "systemview_target" }
