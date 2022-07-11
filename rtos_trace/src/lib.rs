@@ -7,7 +7,7 @@
 //! 
 //! # Implementation
 //! 
-//! The backend is required implement [`RtosTrace].
+//! The backend is required implement [`RtosTrace`](crate::RtosTrace).
 //! 
 //! Existing implementation:
 //! - [SEGGER SystemView](https://docs.rs/systemview-target/)
@@ -16,7 +16,7 @@
 //! 
 //! ## RTOS
 //! 
-//! The RTOS can implement [`RtosTraceOSCallbacks`] to provide additional 
+//! The RTOS can implement [`RtosTraceOSCallbacks`](crate::RtosTraceOSCallbacks) to provide additional 
 //! information upon request from the tracing software. For example:
 //! ```ignore
 //! rtos_trace::global_os_callbacks!{Scheduler}

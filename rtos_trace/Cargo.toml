@@ -1,6 +1,6 @@
 [package]
 name = "rtos-trace"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Stefan Lüthi <stefan@luethi.tech>"]
 edition = "2021"
 license = "MIT"
@@ -8,7 +8,7 @@ categories = ["embedded", "no-std"]
 keywords = ["embedded", "no_std", "cortex-m", "rtos"]
 description = "RTOS tracing trait."
 documentation = "https://docs.rs/rtos-trace"
-repository = "https://gitlab.com/bern-rtos/tools/rtos-trace/rtos_trace"
+repository = "https://gitlab.com/bern-rtos/tools/rtos-trace"
 homepage = "https://bern-rtos.org"
 
 [features]
