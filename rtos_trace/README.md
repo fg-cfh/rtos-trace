@@ -11,7 +11,7 @@ Set of traits used to trace RTOS internals.
 
 ## Implementation
 
-The backend is required implement [`RtosTrace].
+The backend is required implement [`RtosTrace`](https://docs.rs/rtos-trace/latest/rtos_trace/trait.RtosTrace.html).
 
 Existing implementation:
 - [SEGGER SystemView](https://docs.rs/systemview-target/)
@@ -20,7 +20,7 @@ Existing implementation:
 
 ### RTOS
 
-The RTOS can implement [`RtosTraceOSCallbacks`] to provide additional 
+The RTOS can implement [`RtosTraceOSCallbacks`](https://docs.rs/rtos-trace/latest/rtos_trace/trait.RtosTraceOSCallbacks.html) to provide additional 
 information upon request from the tracing software. For example:
 ```rust
 rtos_trace::global_os_callbacks!{Scheduler}
