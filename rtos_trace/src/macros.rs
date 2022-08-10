@@ -8,7 +8,7 @@ macro_rules! global_trace {
         }
         #[no_mangle]
         fn _rtos_trace_task_send_info(id: u32, info: $crate::TaskInfo) {
-            <$ident as $crate::RtosTrace>::task_send_info(id: u32, info: $crate::TaskInfo)
+            <$ident as $crate::RtosTrace>::task_send_info(id, info)
         }
         #[no_mangle]
         fn _rtos_trace_task_terminate(id: u32) {
