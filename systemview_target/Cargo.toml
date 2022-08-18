@@ -28,7 +28,7 @@ cortex-m = {version = "0.7", optional = true }
 
 [build-dependencies]
 # default features must be disabled, because bindgen enables `std` in `log`
-bindgen = { version = "0.60", default-features = false }
+bindgen = { version = "0.60", default-features = false, features = ["runtime"] }
 cc = "1.0"
 
 [dev-dependencies]
