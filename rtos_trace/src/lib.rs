@@ -70,6 +70,7 @@
 //! ```
 
 #![no_std]
+#![no_main]
 
 mod macros;
 pub mod trace;

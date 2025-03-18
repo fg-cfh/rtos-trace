@@ -42,6 +42,7 @@
 //! ```
 
 #![no_std]
+#![no_main]
 
 #[cfg(not(any(feature = "cortex-m")))]
 compile_error!("You must select a target architecture. Supported are: cortex-m");
