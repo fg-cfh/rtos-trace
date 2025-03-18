@@ -24,7 +24,7 @@ cortex-m = ["dep:cortex-m"]
 
 [dependencies]
 cty = "0.2"
-rtos-trace = "0.1"
+rtos-trace = { path = "../rtos_trace" }
 heapless = { version = "0.8", optional = true }
 log = { version = "0.4", optional = true, features = [
     "max_level_debug",
