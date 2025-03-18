@@ -85,6 +85,8 @@ pub struct TaskInfo {
     pub stack_base: usize,
     /// Size of the stack in bytes.
     pub stack_size: usize,
+    /// Stack usage in bytes.
+    pub stack_usage: usize,
 }
 
 /// Collection of tracing functions which are called by the RTOS.

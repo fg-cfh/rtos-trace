@@ -99,6 +99,7 @@ impl RtosTrace for SystemView {
             Prio: info.priority,
             StackBase: info.stack_base as u32,
             StackSize: info.stack_size as u32,
+            StackUsage: info.stack_usage as u32,
         };
         unsafe {
             SEGGER_SYSVIEW_SendTaskInfo(&info);
