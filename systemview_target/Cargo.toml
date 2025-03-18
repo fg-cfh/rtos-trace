@@ -15,6 +15,7 @@ homepage = "https://bern-rtos.org"
 harness = false
 
 [features]
+default = ["cortex-m"]
 callbacks-os = []
 callbacks-os-time = []
 callbacks-app = []
