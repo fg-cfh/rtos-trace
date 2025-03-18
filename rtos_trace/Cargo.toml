@@ -11,6 +11,9 @@ documentation = "https://docs.rs/rtos-trace"
 repository = "https://gitlab.com/bern-rtos/tools/rtos-trace"
 homepage = "https://bern-rtos.org"
 
+[lib]
+harness = false
+
 [features]
 default = ["trace_impl"]
 trace_impl = []
