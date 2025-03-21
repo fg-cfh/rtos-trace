@@ -25,6 +25,11 @@ fn main() {
     #[cfg(feature = "callbacks-os-time")]
     let os_time = "CALLBACKS_OS_TIME";
 
+    #[cfg(not(feature = "callbacks-os"))]
+    let os_callbacks = "_DUMMY";
+    #[cfg(feature = "callbacks-os")]
+    let os_callbacks = "CALLBACKS_OS";
+
     // Compile SystemView
     cc::Build::new()
         .file("lib/SEGGER/SEGGER_SYSVIEW.c")
@@ -34,5 +39,6 @@ fn main() {
         .include("lib/SEGGER")
         .include("lib/Config")
         .define(os_time, "")
+        .define(os_callbacks, "")
         .compile("systemview");
 }
